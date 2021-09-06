@@ -33,6 +33,7 @@ public class ResponseBodyConverter<T> implements Converter<ResponseBody,T> {
 
                 LogUtil.e("ResponseBodyConverter","(尝试强制转换为 String)",e);
                 T result = (T)ss;
+                LogUtil.e("ResponseBodyConverter","(尝试强制成功)",e);
                 return result;
             }catch (Exception ex){
                 LogUtil.e("ResponseBodyConverter","(强制转换 -String 失败)",e);
