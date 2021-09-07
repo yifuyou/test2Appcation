@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "test2Appcation"
 include ':app'
 include ':app:common-http'
+include ':floatball'
