@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:orientation="vertical">
+
+        <com.base.common.view.date.view.HourAndMinutePicker
+            android:id="@+id/hamPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dialog_date_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#f7f7f7"
+                android:padding="16dp"
+                android:text="@string/ycuwq_datepicker_cancel"
+                android:textColor="@color/datepicker_selectedTextColor" />
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/datepicker_divider" />
+
+            <Button
+                android:id="@+id/btn_dialog_date_decide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#f7f7f7"
+                android:padding="16dp"
+                android:text="@string/ycuwq_datepicker_decide"
+                android:textColor="@color/datepicker_selectedTextColor" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

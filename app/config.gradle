@@ -1,0 +1,35 @@
+ext {
+    versionControl = [
+
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.2",
+
+            minSdkVersion    : 21,
+            targetSdkVersion : 30,
+    ]
+
+
+    dependenciesControl = [
+            //解决Glide和androidx的兼容问题
+            support_annotations: "com.android.support:support-annotations:28.0.0",
+            annotations        : 'androidx.annotation:annotation:1.1.0',
+
+            design             : 'com.google.android.material:material:1.2.1',
+
+            constraint_layout  : 'androidx.constraintlayout:constraintlayout:2.0.4',
+            appcompat          : 'androidx.appcompat:appcompat:1.2.0',  //1.0.0以上会出现fragment无法回收的bug
+            resources          : 'androidx.appcompat:appcompat-resources:1.1.0',
+            savedstate         : 'androidx.savedstate:savedstate:1.0.0',
+            activity           : 'androidx.activity:activity:1.1.0',
+            core               : 'androidx.core:core:1.3.1',
+            vectordrawable     : 'androidx.vectordrawable:vectordrawable:1.0.0',
+            recyclerview       : "androidx.recyclerview:recyclerview:1.1.0",
+
+
+            arouter_compiler   : 'com.alibaba:arouter-compiler:1.5.1',
+            arouter_api        : 'com.alibaba:arouter-api:1.5.1',
+            // 要与compiler匹配使用，均使用最新版可以保证兼容
+            arouter_annotation : 'com.alibaba:arouter-annotation:1.0.6',
+
+    ]
+}

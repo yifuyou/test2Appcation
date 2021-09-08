@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.base.common.view.roundview.RoundLinearLayout
+        android:id="@+id/rllPPWView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:rv_backgroundColor="@color/C_FFFFFF"
+        app:rv_cornerRadius="@dimen/dp_6"
+        app:rv_strokeColor="@color/C_DBDBDB"
+        app:rv_strokeWidth="1px">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+
+    </com.base.common.view.roundview.RoundLinearLayout>
+
+</layout>

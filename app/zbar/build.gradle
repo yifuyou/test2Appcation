@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion versionControl.compileSdkVersion
+    buildToolsVersion versionControl.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versionControl.minSdkVersion
+        targetSdkVersion versionControl.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation dependenciesControl.appcompat
+    implementation dependenciesControl.design
+
+
+    // zbar 二维码扫描
+    api 'cn.bertsir.zbarLibary:zbarlibary:1.4.2'
+
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/dialogRL"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_140"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_recorder_bg"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/voiceIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_recorder_voice" />
+
+            <ImageView
+                android:id="@+id/volumeIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_amp1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/desTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/up_send_cancel"
+            android:textColor="@color/C_FFFFFF"
+            android:textSize="@dimen/font_12" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/speckBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/C_FFFFFF"
+        android:gravity="center"
+        android:text="@string/press_speck" />
+</RelativeLayout>

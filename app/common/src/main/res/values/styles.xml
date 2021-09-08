@@ -1,0 +1,310 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--Appbar背景色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--ToolBar上的Title颜色-->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--控制各个控件被选中时的颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--页面背景色-->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <!--各个控制控件的默认颜色-->
+        <item name="android:colorControlNormal">@color/colorControlNormal</item>
+        <!--底部导航栏颜色-->
+        <item name="android:navigationBarColor">@color/navigationColor</item>
+
+
+        <item name="android:textColor">@color/textColor_333333</item>
+        <item name="android:editTextColor">@color/textColor_333333</item>
+        <item name="android:textColorHint">@color/textColor_AAAAAA</item>
+
+
+        <item name="toolbarStyle">@style/CustomerToolbar</item>
+
+
+        <!--设置window背景是否绘制toolbar背景-->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <!--设置波纹颜色-->
+        <!--android:background="?android:attr/selectableItemBackground"波纹有边界-->
+        <!--android:background="?android:attr/selectableItemBackgroundBorderless"波纹超出边界-->
+        <item name="android:colorControlHighlight">@color/colorControlNormal</item>
+
+        <!--        切換动画-->
+        <!--        <item name="android:windowAnimationStyle">@style/MyWindowAnimTheme</item>-->
+
+
+        <item name="android:activityOpenEnterAnimation">@anim/slide_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_from_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_from_left</item>
+
+
+    </style>
+
+    <!--    @android:activityOpenEnterAnimation，// 表示新的activity创建进入效果-->
+    <!--    @android:activityOpenExitAnimation，// 表示activity还没有finish()下退出效果-->
+    <!--    @android:activityCloseEnterAnimation，// 表示上一个 activity返回进入效果-->
+    <!--    @android:activityCloseExitAnimation ，// 表示的是activity finish()之后退出效果...-->
+
+    <!--    <style name="MyWindowAnimTheme">-->
+    <!--        <item name="android:activityOpenEnterAnimation">@anim/top_to_bottom_in</item>-->
+    <!--        <item name="android:activityOpenExitAnimation">@anim/top_to_bottom_out</item>-->
+    <!--        <item name="android:activityCloseEnterAnimation">@anim/bottom_to_top_in</item>-->
+    <!--        <item name="android:activityCloseExitAnimation">@anim/bottom_to_top_out</item>-->
+    <!--    </style>-->
+
+    <!-- 背景透明样式 -->
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- ratingBar 样式主题-->
+    <style name="myRatingBarStyle" parent="android:Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">@dimen/dp_20</item>
+        <item name="android:maxHeight">@dimen/dp_50</item>
+    </style>
+
+    <style name="myRatingBarStyle1" parent="android:Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar1</item>
+        <item name="android:minHeight">@dimen/dp_10</item>
+        <item name="android:maxHeight">@dimen/dp_50</item>
+    </style>
+
+    <style name="myRatingBarStyle2" parent="android:Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar2</item>
+        <item name="android:minHeight">@dimen/dp_20</item>
+        <item name="android:maxHeight">@dimen/dp_50</item>
+    </style>
+
+
+    <!-- RadioButton 样式主题-->
+    <style name="RadioButtonThemeCustom" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/png_s_radio_button</item>
+        <item name="android:textColor">@color/sc_666666_ff7d01</item>
+    </style>
+
+    <style name="RadioButtonThemeCustom2" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/png_s_radio_button2</item>
+        <item name="android:textColor">@color/sc_666666_ff7d01</item>
+    </style>
+
+    <style name="RadioButtonThemeCustom3" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/png_s_radio_button3</item>
+    </style>
+
+
+    <!--解决开始页，黑白屏问题-->
+    <style name="AppTheme.StartLoadTranslucent" parent="AppTheme.ImageTranslucentTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+    <!--    这个主题可以把toolbar和背景图片和通知栏融为一体
+    但toolbar,根布局颜色设置与标题布局的颜色一致，并将内容布局设置为白色；
+    -->
+    <style name="AppTheme.ImageTranslucentTheme" parent="AppTheme">
+        <!--设置window背景是否绘制toolbar背景-->
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <!--设置状态栏为透明-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--设置状态栏为透明色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!--导航栏不透明-->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!--导航栏为黑色-->
+        <item name="android:navigationBarColor">@color/C_333333</item>
+
+    </style>
+
+    <style name="MatchSettingSwitch">
+        <item name="android:layout_width">@dimen/dp_44</item>
+        <item name="android:layout_height">@dimen/dp_22</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_gravity">center_vertical|right</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
+    </style>
+
+    <declare-styleable name="SwitchButton" tools:ignore="ResourceName">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswThumbRangeRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextThumbInset" format="dimension" />
+        <attr name="kswTextExtra" format="dimension" />
+        <attr name="kswTextAdjust" format="dimension" />
+    </declare-styleable>
+
+    <style name="dialog_no_bg" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/C_00000000</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dialog_bg" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/C_00000000</item>
+    </style>
+
+    <style name="Theme.Light.NoTitle.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="Theme.Light.NoTitle.NoShadow.Dialog" parent="Theme.Light.NoTitle.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Animation.Bottom.Rising" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+    <style name="TagStyle">
+        <item name="android:paddingTop">@dimen/dp_8</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:paddingLeft">@dimen/dp_30</item>
+        <item name="android:paddingRight">@dimen/dp_30</item>
+    </style>
+
+    <!-- PopupWindow 动画 样式 -->
+    <style name="AnimBottomPopupWindow" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_bottom_out</item>
+    </style>
+
+    <!-- 首页底部标签栏. -->
+    <style name="BottomNavigationView">
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">?android:selectableItemBackgroundBorderless</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <!--控件阴影-->
+    <!--shadowColor:设置阴影颜色-->
+    <!--shadowRadius:设置阴影的扩展距离-->
+    <!--shadowDeltaLength:设置子View到ShadowContainer的距离-->
+    <!--shadowCornerRadius:设置子View背景的圆角大小-->
+    <!--shadowDx: 设置阴影向下移动距离-->
+    <!--shadowDy: 设置阴影在Y轴移动距离-->
+
+    <declare-styleable name="ShadowContainer">
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowRadius" format="dimension" />
+        <attr name="shadowDeltaLength" format="dimension" />
+        <attr name="shadowCornerRadius" format="dimension" />
+        <attr name="shadowDx" format="dimension" />
+        <attr name="shadowDy" format="dimension" />
+        <attr name="enable" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ProgressLineView">
+        <attr name="plv_color1" format="color" />
+        <attr name="plv_color2" format="color" />
+        <attr name="plv_color3" format="color" />
+        <attr name="plv_color4" format="color" />
+
+        <attr name="plv_data1" format="float" />
+        <attr name="plv_data2" format="float" />
+        <attr name="plv_data3" format="float" />
+        <attr name="plv_data4" format="float" />
+
+        <!--    //交叉区域的长度  两边各一半  实际是*2-->
+        <attr name="plv_crossSpec" format="dimension" />
+        <!--    //中间的间的隔 透明色-->
+        <attr name="plv_space" format="dimension" />
+        <!--        //缺口向左倾斜-->
+        <attr name="plv_isLeft" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ProgressCircleView">
+        <attr name="pcv_data1" format="float" />
+        <attr name="pcv_data2" format="float" />
+
+        <attr name="pcv_colorLeft" format="color" />
+        <attr name="pcv_colorRight" format="color" />
+        <!--   //内边距-->
+        <attr name="pcv_padding" format="dimension" />
+        <!--    //圆环的宽度-->
+        <attr name="pcv_strokeWidth" format="dimension" />
+        <!--    //中间间隔的角度-->
+        <attr name="pcv_spaceAngle" format="float" />
+        <attr name="pcv_startAngle" format="float" />
+
+    </declare-styleable>
+
+
+    <!-- 解决自定义toolbar不能居中的问题 -->
+    <style name="CustomerToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+
+    <style name="ImagesStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/C_00000000</item>
+        <item name="colorPrimaryDark">@color/C_00000000</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="WarpLinearLayoutDefault">
+        <item name="wl_gravity">left</item>
+        <item name="wl_horizontal_Space">20dp</item>
+        <item name="wl_vertical_Space">20dp</item>
+        <item name="wl_isFull">false</item>
+    </style>
+
+
+</resources>

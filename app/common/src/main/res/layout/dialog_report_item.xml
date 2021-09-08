@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="click"
+            type="com.base.common.view.adapter.connector.BaseViewHolder" />
+
+        <variable
+            name="item"
+            type="com.base.common.view.adapter.bean.ChildBaseBean" />
+    </data>
+
+    <com.base.common.view.roundview.RoundFrameLayout
+        android:id="@+id/group_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:onClick="@{click::onClick}"
+        android:orientation="vertical"
+        app:rv_backgroundPressColor="@color/C_DBDBDB">
+
+        <TextView
+            android:id="@+id/image_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="#2284DE"
+            android:textSize="@dimen/font_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/dp_8"
+            android:background="@color/C_F1F1F1" />
+    </com.base.common.view.roundview.RoundFrameLayout>
+</layout>

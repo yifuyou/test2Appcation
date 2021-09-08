@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="click"
+            type="com.base.common.view.adapter.connector.BaseViewHolder" />
+
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/item_view"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16">
+
+        <com.base.common.view.widget.imageView.GlideImageView
+            android:id="@+id/givImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="@{click::onClick}"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_default"
+            app:siv_radius="@dimen/dp_6"
+            app:siv_shape_type="roundRect" />
+
+        <ImageView
+            android:id="@+id/givImageDelete"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="end"
+            android:onClick="@{click::onClick}"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:src="@drawable/ic_image_delete" />
+
+    </FrameLayout>
+</layout>

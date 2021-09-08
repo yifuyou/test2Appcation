@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    resourcePrefix "image_"
+
+    compileSdkVersion versionControl.compileSdkVersion
+    buildToolsVersion versionControl.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versionControl.minSdkVersion
+        targetSdkVersion versionControl.targetSdkVersion
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
+            }
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation dependenciesControl.appcompat
+    implementation 'com.facebook.fresco:fresco:1.7.1'
+    implementation dependenciesControl.recyclerview
+
+}

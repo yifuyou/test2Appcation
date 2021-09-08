@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+//apply from: '../mavenpush.gradle'
+
+android {
+    compileSdkVersion versionControl.compileSdkVersion
+    buildToolsVersion versionControl.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versionControl.minSdkVersion
+        targetSdkVersion versionControl.targetSdkVersion
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    lintOptions {
+        abortOnError false
+    }
+
+    resourcePrefix 'ucrop_'
+
+    sourceSets.main {
+        jni.srcDirs = []
+    }
+
+}
+
+dependencies {
+    implementation dependenciesControl.appcompat
+    implementation "androidx.exifinterface:exifinterface:1.1.0-beta01"
+    implementation "androidx.transition:transition:1.2.0-rc01"
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+}

@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
 }
 
+//依赖版本的统一管理
+apply from: 'config.gradle'
 android {
     compileSdk 30
 
@@ -25,6 +27,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    compileSdkVersion compileSdkVersion
+    buildToolsVersion buildToolsVersion
 }
 
 dependencies {

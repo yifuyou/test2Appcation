@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="back">返回</string>
+    <string name="next">下一步</string>
+
+    <string name="rm">RM</string>
+    <string name="picture">照片</string>
+
+    <string name="ok">确认</string>
+    <string name="hint">提示</string>
+    <string name="close">关闭</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <string name="km">公里</string>
+
+
+    <!--状态布局-->
+    <string name="state_empty_tip">暂无数据</string>
+    <string name="state_error_tip">获取数据失败</string>
+    <string name="state_no_login_tip">未登录，请先登录</string>
+    <string name="state_retry_tip">请刷新</string>
+    <string name="btn_login">登录</string>
+    <string name="state_no_network_tip">无网络</string>
+    <string name="state_time_out_tip">请求超时</string>
+    <string name="retry_tip">点击重试</string>
+    <string name="state_loding_tip">正在加载</string>
+    <string name="up_send_cancel">手指上滑，取消发送</string>
+    <string name="press_speck">按住 说话</string>
+    <string name="up_finish">松开 结束</string>
+    <string name="up_point_cancel">松开手指，取消发送</string>
+    <string name="speck_to_short">说话时间太短</string>
+
+
+    <string name="wechat_login_reject">用户拒绝</string>
+    <string name="wechat_login_cancel">用户取消</string>
+    <string name="wechat_login_fail">失败</string>
+    <string name="save_image">保存图片</string>
+
+
+    <!--    ImagesActivity-->
+    <string name="image_index">%1$d/%2$d</string>
+    <!--    GifSizeFilter-->
+    <string name="error_gif">长宽不小于 %1$dpx，且大小不超过 %2$sM。</string>
+
+
+    <string name="ycuwq_datepicker_cancel">取消</string>
+    <string name="ycuwq_datepicker_decide">确认</string>
+    <string name="ycuwq_datepicker_hour">时</string>
+    <string name="ycuwq_datepicker_minute">分</string>
+
+    <string name="upgrade_now">立即升级</string>
+    <string name="install">安装</string>
+    <string name="download_start">开始下载</string>
+    <string name="download_later">以后再说</string>
+    <string name="versions_new">发现新版本</string>
+
+
+
+
+
+    <string name="indicator_color_error">指示器的颜色只能设置成“@color/colorID or #000000”</string>
+    <string name="banner_adapter_null_error">Adapter为空！请检查下参数</string>
+
+</resources>

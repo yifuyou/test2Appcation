@@ -1,0 +1,46 @@
+
+    <!--    android:windowSoftInputMode="adjustPan"   键盘就会覆盖屏幕-->
+    <!--    android:windowSoftInputMode="stateVisible|adjustResize"   屏幕整体上移（结合ScrollView实现）-->
+
+    <!--    android:windowSoftInputMode="adjustPan|stateHidden" 软键盘弹出，界面布局不变-->
+
+android studio编译没通过，无法打包。但是错误提示没具体显示
+gradlew assembleDebug --stacktrace
+
+
+    //使用aapt工具 查看apk中权限
+    //命令：cd D:\android\sdk\build-tools\29.0.2      aapt dump badging xxx.apk
+    //移除权限
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:node="remove" />
+
+    //gradlew compileDebug --stacktrace --info --debug  检查打包报错
+    //read: Unexpected EOF  adb logcat -G 2m  打包时日志太多
+
+
+  MotionEvent   getX()是表示Widget相对于自身左上角的x坐标,
+   而getRawX()是表示相对于屏幕左上角的x坐标值
+   (注意:这个屏幕左上角是手机屏幕左上角,不管activity是否有titleBar或是否全屏幕)
+   ,getY(),getRawY()一样的道理
+
+
+MeasureSpec.EXACTLY - 视图应该是这么多像素，无论它实际上有多大。父控件已经确切的指定了子查看的大小
+MeasureSpec.AT_MOST - 如果视图的尺寸较小，则视图可以是此尺寸或更小。表示子查看具体大小没有尺寸限制，但是存在上限，上限一般为父查看大小.
+MeasureSpec.UNSPECIFIED - 视图可以是它需要的任何大小，以显示它需要显示的内容。- 父控件没有给子视任何限制，子查看可以设置为任意大小。
+
+[X] Android Studio (not installed)
+ flutter config --android-studio-dir="D:\android\Android Studio"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -28,6 +28,8 @@ android {
     dataBinding{
         enabled true
     }
+    compileSdkVersion compileSdkVersion
+    buildToolsVersion buildToolsVersion
 }
 
 dependencies {

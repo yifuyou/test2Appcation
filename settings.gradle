@@ -10,3 +10,12 @@ rootProject.name = "test2Appcation"
 include ':app'
 include ':app:common-http'
 include ':app:floatball'
+include ':app:common'
+include ':app:tools-imageEdit'
+include ':app:tools-matisse'
+include ':app:tools-ucrop'
+include ':app:zbar'
+
+
+
+

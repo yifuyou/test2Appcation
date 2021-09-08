@@ -1,0 +1,47 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <!--形状-->
+        <shape>
+            <!-- 角球-->
+            <corners android:radius="@dimen/dp_53" />
+            <!--梯度-->
+            <!--            <gradient-->
+            <!--                android:angle="0"-->
+            <!--                android:centerColor="#ff5a5d5a"-->
+            <!--                android:centerY="0.75"-->
+            <!--                android:endColor="#ff747674"-->
+            <!--                android:startColor="#ff9d9e9d" />-->
+            <solid android:color="#FCF4DE" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/dp_53" />
+                <solid android:color="#FCF4DE" />
+                <!--                <gradient-->
+                <!--                    android:angle="0"-->
+                <!--                    android:centerColor="#80ffb600"-->
+                <!--                    android:centerY="0.75"-->
+                <!--                    android:endColor="#a0ffcb00"-->
+                <!--                    android:startColor="#80ffd300" />-->
+            </shape>
+        </clip>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <!--        clip会变成方形-->
+        <scale android:scaleWidth="100%">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/dp_53" />
+                <gradient
+                    android:angle="0"
+                    android:endColor="#F8397F"
+                    android:startColor="#FF7D56" />
+            </shape>
+        </scale>
+    </item>
+
+</layer-list>

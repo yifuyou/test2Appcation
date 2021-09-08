@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/itemView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/flContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llBottom"
+            android:orientation="vertical" />
+
+        <include
+            android:id="@+id/inToolbar"
+            layout="@layout/base_title_toolbar" />
+
+        <View
+            android:id="@+id/vBottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/llBottom"
+            android:background="@color/C_DBDBDB"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+
+</layout>

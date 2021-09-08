@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <com.base.common.view.roundview.RoundLinearLayout
+        android:id="@+id/rllToolbarItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_background_endColor="@color/colorStatusBarEnd"
+        app:rv_background_startColor="@color/colorStatusBarStart"
+        app:rv_gradientOrientation="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_44"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitleCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor_FFFFFF"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="标题" />
+
+
+            <com.base.common.view.roundview.RoundTextView
+                android:id="@+id/tvTextRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/textColor_FFFFFF"
+                android:textSize="@dimen/font_14"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitleCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTitleCenter"
+                tools:text="确定" />
+
+            <ImageView
+                android:id="@+id/ivTextRight"
+                android:layout_width="@dimen/dp_44"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:padding="@dimen/dp_10"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitleCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTitleCenter" />
+
+            <TextView
+                android:id="@+id/tvTextLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_11"
+                android:padding="@dimen/dp_5"
+                android:text="取消"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/font_18"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/ivImageLeftClose"
+                android:layout_width="@dimen/dp_44"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginStart="@dimen/dp_6"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/ic_back_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!--            <com.base.common.view.widget.imageView.GlideImageView-->
+            <!--                android:id="@+id/ivImageLeftClose"-->
+            <!--                android:layout_width="@dimen/dp_50"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:padding="@dimen/dp_10"-->
+            <!--                android:scaleType="fitCenter"-->
+            <!--                android:src="@drawable/svg_back"-->
+            <!--                android:visibility="visible"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.base.common.view.roundview.RoundLinearLayout>
+</layout>

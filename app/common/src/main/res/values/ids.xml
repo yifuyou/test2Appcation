@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="drawable_tag" type="id" />
+
+    <!--    自定义的tag  防止补第三方的tag覆盖-->
+    <item name="tag_first" type="id" />
+    <item name="tag_two" type="id" />
+    <item name="tag_three" type="id" />
+
+
+</resources>
